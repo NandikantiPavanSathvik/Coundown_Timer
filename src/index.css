@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Optional: Customizing your timer colors */
+@theme {
+  --color-timer-bg: #f8fafc;
+  --color-timer-text: #2563eb;
+}
