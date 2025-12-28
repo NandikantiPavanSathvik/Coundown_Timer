@@ -5,7 +5,7 @@ const EventCard = ({ event, onDelete }) => {
   const { days, hours, minutes, seconds, isEnded } = useCountdown(event.targetDate);
 
   return (
-    <div className={`flex flex-col sm:flex-row items-center justify-between p-6 rounded-[32px] border transition-all gap-6 ${isEnded ? 'bg-red-50 border-red-100' : 'bg-slate-50 border-slate-100'}`}>
+    <div className={`flex flex-col sm:flex-row items-center justify-between p-6 rounded-32px border transition-all gap-6 ${isEnded ? 'bg-red-50 border-red-100' : 'bg-slate-50 border-slate-100'}`}>
       <div className="text-center sm:text-left">
         <div className="flex items-center gap-2 justify-center sm:justify-start">
           <h3 className={`font-black text-xl ${isEnded ? 'text-red-600' : 'text-slate-800'}`}>{event.name}</h3>
